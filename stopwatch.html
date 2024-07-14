@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="main">
+        <h2>Push Your Pace, Conquer The Clock</h2>
+        <div id="stopwatch">
+            <div id="overlay"></div>
+            
+            <h1 id="dispTime">00:00:00</h1>
+
+            <div id="btn">
+                <i class="ri-stop-circle-line" id="stop" onclick="watchstop()"></i>
+                <i class="ri-play-circle-line" id="play" onclick="watchstart()"></i>
+                <i class="ri-restart-line" id="restart" onclick="watchreset()"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
